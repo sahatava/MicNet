@@ -1,5 +1,5 @@
 # MicNet
-'''
+```
 library(mvtnorm)
 library(Matrix)
 library(matrixcalc)
@@ -20,4 +20,4 @@ library(ROCR)
 library("devtools")
 install_github("sahatava/MicNet")
 library("MicNet")
-'''
+```
