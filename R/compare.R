@@ -80,8 +80,8 @@ mysnsp<-function(inv,res){
   if(NROW(inv)!=NCOL(inv) || NROW(res)!=NCOL(res) || NROW(inv)!=NROW(res)){
     stop ("Error in mysnsp function")
   }
-  Tc=(abs(cov2cor(as.matrix(inv))) >= thresh)
-  Pc=(abs(cov2cor(as.matrix(res))) >= thresh)
+  Tc=(abs(cov2cor(as.matrix(inv))) > thresh)
+  Pc=(abs(cov2cor(as.matrix(res))) > thresh)
   n=NROW(inv)
   TP=0
   FP=0
