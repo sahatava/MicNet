@@ -66,7 +66,7 @@ MixGGM_function<-function(X,K, penalty ,init ){
   #X = as.matrix(X[, 2:dim(X)[2]])
 
 
-  X = clrcode(X, base=exp(1))
+  X = clrcode(X/rowSums(X), base=exp(1))
   niter=100
   diff_threshold =.01
   if(K<=0){
